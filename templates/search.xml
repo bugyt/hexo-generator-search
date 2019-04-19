@@ -5,6 +5,7 @@
     {% if post.indexing == undefined or post.indexing %}
     <entry>
       <title>{{ post.title }}</title>
+      <date>{{ post.date }}</date>
       <link href="{{ (url + post.path) | uriencode }}"/>
       <url>{{ (url + post.path) | uriencode }}</url>
       {% if content %}
